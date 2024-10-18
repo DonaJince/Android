@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case "-":
                     result = value1 - value2;
                     break;
-                case "*":
+                case "x":
                     result = value1 * value2;
                     break;
                 case "/":
