@@ -38,21 +38,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String b = password.getText().toString();
             if (a.equals("dona")&&b.equals("123"))
             {
-                LayoutInflater lf=getLayoutInflater();
-                View v=lf.inflate(R.layout.customtoast,(ViewGroup) findViewById(R.id.toastid1));
-                Toast toast = new Toast(getApplicationContext());
-                toast.setDuration(Toast.LENGTH_LONG);
-                toast.setView(v);
-                toast.show();
+                    Toast t1 = Toast.makeText(this," ", Toast.LENGTH_LONG);
+                    LayoutInflater Lin = getLayoutInflater();
+                    View appear = Lin.inflate(R.layout.toastid, (ViewGroup) findViewById(R.id.toastid));
+                    t1.setGravity(Gravity.TOP,0,1200);
+                    t1.setView(appear);
+                    t1.show();
+
             }
             else
             {
-                LayoutInflater lf=getLayoutInflater();
-                View v=lf.inflate(R.layout.customtoast2,(ViewGroup) findViewById(R.id.toastid2));
-                Toast toast = new Toast(getApplicationContext());
-                toast.setDuration(Toast.LENGTH_LONG);
-                toast.setView(v);
-                toast.show();
+                Toast t1 = Toast.makeText(this," ", Toast.LENGTH_LONG);
+                LayoutInflater Lin = getLayoutInflater();
+                View appear = Lin.inflate(R.layout.toast1_layout, (ViewGroup) findViewById(R.id.toastid));
+                t1.setGravity(Gravity.TOP,0,1200);
+                t1.setView(appear);
+                t1.show();
+
             }
         }
     }
