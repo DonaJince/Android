@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                     Toast t1 = Toast.makeText(this," ", Toast.LENGTH_LONG);
                     LayoutInflater Lin = getLayoutInflater();
-                    View appear = Lin.inflate(R.layout.toastid1, (ViewGroup) findViewById(R.id.toastid));
+                    View appear = Lin.inflate(R.layout.customtoast1, (ViewGroup) findViewById(R.id.toastid1));
                     t1.setGravity(Gravity.TOP,0,1200);
                     t1.setView(appear);
                     t1.show();
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 Toast t1 = Toast.makeText(this," ", Toast.LENGTH_LONG);
                 LayoutInflater Lin = getLayoutInflater();
-                View appear = Lin.inflate(R.layout.toastid2, (ViewGroup) findViewById(R.id.toastid));
+                View appear = Lin.inflate(R.layout.customtoast2, (ViewGroup) findViewById(R.id.toastid2));
                 t1.setGravity(Gravity.TOP,0,1200);
                 t1.setView(appear);
                 t1.show();
