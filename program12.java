@@ -16,7 +16,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     Spinner sp ;
     ImageView img;
     String[] names;
-
+/*<resources>
+    <string name="app_name">program12</string>
+    <string-array name="Country">
+        <item>France</item>
+        <item>Argentina</item>
+        <item>Germany</item>
+          </string-array>
+</resources>*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
